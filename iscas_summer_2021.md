@@ -278,13 +278,13 @@ OneFlow 充分发挥自身分布式的优势，使用 OneFlow 重写这些模型
 - 熟悉 PyTorch，能独立阅读学习 NVlabs imaginaire 仓库源码
 - 了解 OneFlow 的使用，可以在指导下完成分布式训练
 
-## 项目十一：给TVM添加OneFlow前端
+## 项目十一：给 TVM 添加 OneFlow 前端
 
 #### 项目描述
 
-TVM作为当代应用最广泛的深度学习编译器支持将各种主流深度学习框架（如TensorFlow/Pytorch/MxNet等）模型直接转换为TVM的中间表示，可以实现在GPU，CPU，FPGA等各种后端硬件上部署，并结合Auto TVM，Ansor等技术可以在各种后端上取得较好的通用推理效率。
+TVM 作为当代应用最广泛的深度学习编译器支持将各种主流深度学习框架（如 TensorFlow/Pytorch/MxNet 等）模型直接转换为 TVM 的中间表示，可以实现在 GPU，CPU，FPGA 等各种后端硬件上部署，并结合 Auto TVM，Ansor 等技术可以在各种后端上取得较好的通用推理效率。
 
-OneFlow作为一个深度学习训练框架，将其训练的深度学习模型高效的部署到各个平台上也是重要的一环。但OneFlow目前没有提供通用的模型部署方案，因此本项目旨在为TVM添加OneFlow前端。使得TVM可以直接加载OneFlow训练的模型并转换为TVM的Graph IR，然后在各种后端硬件上进行部署。另外，OneFlow目前不仅支持FP32和FP16的训练，还很好的支持了INT8量化训练。所以本项目还期望在为TVM支持OneFlow前端的过程中，也可以实现部署OneFlow的INT8量化训练模型。
+OneFlow 作为一个深度学习训练框架，将其训练的深度学习模型高效的部署到各个平台上也是重要的一环。但 OneFlow 目前没有提供通用的模型部署方案，因此本项目旨在为 TVM 添加 OneFlow 前端。使得 TVM 可以直接加载 OneFlow 训练的模型并转换为 TVM 的 Graph IR，然后在各种后端硬件上进行部署。另外，OneFlow 目前不仅支持 FP32 和 FP16 的训练，还很好的支持了 INT8 量化训练。所以本项目还期望在为 TVM 支持 OneFlow 前端的过程中，也可以实现部署 OneFlow 的 INT8 量化训练模型。
 
 
 
@@ -298,13 +298,13 @@ OneFlow作为一个深度学习训练框架，将其训练的深度学习模型�
 
 #### 项目产出要求
 
-- 为TVM支持OneFlow前端，支持在TVM中直接加载OneFlow的模型并推理。
-- 完善TVM支持OneFlow前端的文档和使用示例，提交PR给TVM，合进TVM官方仓库，并负责输出一篇TVM如何添加OneFlow前端的文档。
-- 基于TVM的OneFlow前端完成常见模型如ResNet50，MobileNet，Transformer等在TVM中的部署。测试精度速度并整理报告文档。
+- 为 TVM 支持 OneFlow 前端，支持在 TVM 中直接加载 OneFlow 的模型并推理。
+- 完善 TVM 支持 OneFlow 前端的文档和使用示例，提交 PR 给 TVM，合进 TVM 官方仓库，并负责输出一篇 TVM 如何添加 OneFlow 前端的文档。
+- 基于 TVM 的 OneFlow 前端完成常见模型如 ResNet50、MobileNet、Transformer 等在 TVM 中的部署。测试精度速度并整理报告文档。
 
 #### 项目技术要求
 
-- 熟悉Python，了解单元测试
-- 了解OneFlow的使用，可以搭建常用模型进行推理
-- 了解TVM的使用，有深度学习编译器相关经验更佳
+- 熟悉 Python，了解单元测试
+- 了解 OneFlow 的使用，可以搭建常用模型进行推理
+- 了解 TVM 的使用，有深度学习编译器相关经验更佳
 - 了解深度学习模型量化训练
