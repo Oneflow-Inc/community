@@ -9,9 +9,7 @@
 1. 利用 reset_docstr 动态地修改 docstring，让原本的英文API文档变成你翻译的中文文档；
 2. Sphinx 生成 HTML（此时就是中文的网页了）。
 
-要了解 docstring 是什么，Sphinx 如何工作以及 rest_docstr 具体实现的原理，可参考视频:
-
-<video src="https://oneflow-public.oss-cn-beijing.aliyuncs.com/translate_api_docs/API%20%E4%BB%93%E5%BA%93_01.mp4" controls="controls" width="1280" height="720">您的浏览器不支持播放该视频！</video>
+要了解 docstring 是什么，Sphinx 如何工作以及 rest_docstr 具体实现的原理，可观看[30分钟介绍原理视频](https://oneflow-public.oss-cn-beijing.aliyuncs.com/translate_api_docs/API%20%E4%BB%93%E5%BA%93_01.mp4)。
 
 ## 首次翻译的准备
 
