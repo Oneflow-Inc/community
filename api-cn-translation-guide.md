@@ -1,6 +1,6 @@
 # Oneflow API 文档英译中指南
 
-本文档介绍翻译 [Oneflow API 文档]([OneFlow API Reference](https://oneflow.readthedocs.io/en/master/index.html) 的工作流程。我们已经尽量降低了 Oneflow API 的翻译难度（不需要在翻译前编译 Oneflow），并且翻译人员可以自行检查最终的翻译效果。
+本文档介绍翻译 [OneFlow API Reference](https://oneflow.readthedocs.io/en/master/index.html) 的工作流程。我们已经尽量降低了 Oneflow API 的翻译难度（不需要在翻译前编译 Oneflow），并且翻译人员可以自行检查最终的翻译效果。
 
 ## 流程原理
 
