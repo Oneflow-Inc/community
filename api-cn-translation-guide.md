@@ -66,7 +66,7 @@
 
 Oneflow Python API 文档翻译顺序按照英文文档网站 [OneFlow API Reference](https://oneflow.readthedocs.io/en/master/index.html) API 接口的顺序，逐个翻译。
 
-下面演示完整的翻译流程，也可以参考[视频](https://oneflow-public.oss-cn-beijing.aliyuncs.com/translate_api_docs/guide.MP4)。
+下面演示完整的翻译流程，也可以参考[视频](https://oneflow-public.oss-cn-beijing.aliyuncs.com/translate_api_docs/guide.mp4)。
 
 ## 第 1 步 查找文本
 
