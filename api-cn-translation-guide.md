@@ -9,12 +9,12 @@
 1. 利用 reset_docstr 动态地修改 docstring，让原本的英文API文档变成你翻译的中文文档；
 2. Sphinx 生成 HTML（此时就是中文的网页了）。
 
-要了解 docstring 是什么，Sphinx 如何工作以及 rest_docstr 具体实现的原理，可观看[30分钟介绍原理视频](https://oneflow-public.oss-cn-beijing.aliyuncs.com/translate_api_docs/API%20%E4%BB%93%E5%BA%93_01.mp4)。
+要了解 docstring 是什么，Sphinx 如何工作以及 rest_docstr 具体实现的原理，可观看[30分钟介绍原理视频](https://oneflow-public.oss-cn-beijing.aliyuncs.com/translate_api_docs/principle.mp4)。
 
 ## 首次翻译的准备
 
 - 本地安装 VS code，并安装 Remote - SSH 拓展。
-- 连接公司服务器或云平台，可参考[视频](https://oneflow-public.oss-cn-beijing.aliyuncs.com/translate_api_docs/API%20%E4%BB%93%E5%BA%93_02.mp4)。
+- 连接公司服务器或云平台，可参考[视频](https://oneflow-public.oss-cn-beijing.aliyuncs.com/translate_api_docs/how_to_deploy_cloud.mp4)。
 
 注意：视频中提到的在 Windows操作系统下， nc.exe 的安装路径为 C:\Users\你的用户名\Documents\MobaXterm\slash\bin\nc.exe ，并非在安装目录下。
 
@@ -66,8 +66,7 @@
 
 Oneflow Python API 文档翻译顺序按照英文文档网站 [OneFlow API Reference](https://oneflow.readthedocs.io/en/master/index.html) API 接口的顺序，逐个翻译。
 
-下面演示完整的翻译流程，也可以参考视频：
-<video src="https://oneflow-public.oss-cn-beijing.aliyuncs.com/translate_api_docs/guide.mov" controls="controls" width="1280" height="720">您的浏览器不支持播放该视频！</video>
+下面演示完整的翻译流程，也可以参考[视频](https://oneflow-public.oss-cn-beijing.aliyuncs.com/translate_api_docs/guide.mov)。
 
 ## 第 1 步 查找文本
 
