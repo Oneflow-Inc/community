@@ -71,9 +71,7 @@ Oneflow Python API 文档翻译顺序按照英文文档网站 [OneFlow API Refer
 ## 第 1 步 查找文本
 
 1. 打开 [OneFlow API Reference](https://oneflow.readthedocs.io/en/master/index.html)，复制要翻译的算子的关键语句，通常为一句描述或一行代码。
-
 2. 打开 VScode，点击**文件**中的**打开文件夹**打开 OneFlow 源代码仓库文件夹。点击**编辑**中的**在文件中查找**，粘贴复制的描述，即可找到要翻译的算子的源英文文本。
-
 3. 复制包含关键内容的字符串（即用 """ 包裹的部分），此部分为后需要翻译的内容。
 
 注意：此步中最好记录下英文文本在源代码中的位置，方便后续提交与审核。
