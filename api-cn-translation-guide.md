@@ -147,7 +147,7 @@ r"""
 
 ### 关于参数
 
-Oneflow 的参数原则上应与 Pytorch 对齐，所以翻译过程中应该与 https://pytorch.org/docs/stable/index.html 中的算子对照，并将未对其的算子汇报到 https://github.com/Oneflow-Inc/oneflow/issues/6003 。
+OneFlow 的参数原则上应与 Pytorch 对齐，所以翻译过程中应该与 https://pytorch.org/docs/stable/index.html 中的算子对照，并将未对其的算子汇报到 https://github.com/Oneflow-Inc/oneflow/issues/6003 。
 Oneflow 源码中英文文版有部分参数出错的问题，建议翻译前先使用
 
 ```shell
