@@ -14,10 +14,9 @@
 ## 首次翻译的准备
 
 - 本地安装 VS code，并安装 Remote - SSH 拓展。
-
 - 连接公司服务器或云平台，可参考[视频](https://oneflow-public.oss-cn-beijing.aliyuncs.com/translate_api_docs/API%20%E4%BB%93%E5%BA%93_02.mp4)。
 
-注意视频中提到的 nc.exe 的安装路径为 C:\Users\你的用户名\Documents\MobaXterm\slash\bin\nc.exe ，并非在安装目录下
+注意：视频中提到的在 Windows操作系统下， nc.exe 的安装路径为 C:\Users\你的用户名\Documents\MobaXterm\slash\bin\nc.exe ，并非在安装目录下。
 
 - 打开终端，输入以下命令，克隆 OneFlow 源码仓库：
 
