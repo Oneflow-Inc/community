@@ -51,12 +51,19 @@
 这一部分包括了产业思考、技术理论、企业文化等等，站在更高的立场提供OneFlow技术发展的思考角度：
 
 [以OneFlow为例谈“卡脖子”技术如何破局(1)](https://mp.weixin.qq.com/s/lxWEyD_Y0zYjqg9nbW6OuA) 2020.03.13
+
 [深度学习框架的灵魂](https://mp.weixin.qq.com/s/lfT2xuWfA6MYY3n7l_zz0A) 2020.03.31
+
 [Oneflow的人和精气神](https://mp.weixin.qq.com/s/LJTXQYPy8sfMGEzlPg67Cw) 2020.12.31
+
 [疯狂热爱技术的你为什么应该加入OneFlow](https://mp.weixin.qq.com/s/WSQlLPic5dIJfNenURFXZA) 2021.01.22
+
 [数字经济的内涵与人工智能的角色](https://mp.weixin.qq.com/s/WLZUt2HaEPQxyIWoeLVu1g) 2021.05.28
+
 [我对深度学习“第一性原理”的探索和理解](https://mp.weixin.qq.com/s/no0u_6m3Ima8YlmV7msGqQ) 2021.05.29
+
 [颠覆式编程：软件2.0](https://mp.weixin.qq.com/s/yECrR3gJOZsYKOoGLuRqKQ)
+
 [AI算力的阿喀琉斯之踵：内存墙](https://mp.weixin.qq.com/s/L7mxbkFr_3IdriSR4dXndg)
 
 
