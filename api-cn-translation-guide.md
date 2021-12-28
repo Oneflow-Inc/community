@@ -265,6 +265,13 @@ python3
 1. WARNING: Inline strong start-string without end-string.
 解决方法：注意是否前后 * 或 \` 数量一致，并在最后一个 * 或 \` 后面有空格。如果没有空格会导致此错误。
 
+2. 如果在本地运行make test_cn未出现错误，而pr报误，可以尝试在本地更新 OneFlow 后重启终端。可以通过卸载并重新安装 OneFlow 的方式更新 OneFlow：
+
+```shell
+pip uninstall oneflow
+python3 -m pip install -f https://staging.oneflow.info/branch/master/cu102 oneflow
+```
+
 ## 提交翻译
 
 如果在 `docs` 下运行
