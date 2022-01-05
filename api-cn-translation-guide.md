@@ -48,9 +48,9 @@
 
 3. [安装 OneFlow](https://start.oneflow.org/)：
 
-    ```shell
-    python3 -m pip install -f https://staging.oneflow.info/branch/master/cu102 oneflow
-    ```
+
+        python3 -m pip install -f https://staging.oneflow.info/branch/master/cu102 oneflow
+
 
 4. 在 `master` 分支上创建新的分支，开始翻译工作：
 
