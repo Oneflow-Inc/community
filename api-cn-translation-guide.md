@@ -269,7 +269,7 @@ python3
 
 ```shell
 pip uninstall oneflow
-python3 -m pip install -f https://staging.oneflow.info/branch/master/cu102 oneflow
+python3 -m pip install --pre -f https://staging.oneflow.info/branch/master/cu102 oneflow
 ```
 
 ## 提交翻译
