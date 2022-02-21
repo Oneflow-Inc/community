@@ -16,23 +16,37 @@
 - 本地安装 VS code，并安装 Remote - SSH 拓展。
 - 连接公司服务器或云平台，可参考[视频](https://oneflow-public.oss-cn-beijing.aliyuncs.com/translate_api_docs/how_to_deploy_cloud.mp4)。
 
-注意：视频中提到的在 Windows操作系统下， nc.exe 的安装路径为 C:\Users\你的用户名\Documents\MobaXterm\slash\bin\nc.exe ，并非在安装目录下。
+注意：
+1. 视频中提到的在 Windows操作系统下， nc.exe 的安装路径为 C:\Users\你的用户名\Documents\MobaXterm\slash\bin\nc.exe ，并非在安装目录下。
+
+2. mac 操作系统下， 需要先在该 [网址](https://mirrors.tuna.tsinghua.edu.cn/help/homebrew/) 安装 Homebrew，然后在 VS code 终端中运行 
+   ```
+   brew install corkscrew
+   ```
+   并将 cockbrew 的位置粘贴进 config 文件中。
+
+
+- 生成ssh密钥：
+  ```
+  ssh-keygen -t rsa -C "你的 github 电子邮箱"
+  ```
+   打开 id_rsa.pub 文件，复制密钥，在你的 github 的 ssh 密钥中粘贴并添加。
  
 
-- 打开终端，输入以下命令，克隆 OneFlow 源码仓库：
+- 输入以下命令，克隆 OneFlow 源码仓库：
 
     ```shell
-    git clone https://github.com/Oneflow-Inc/oneflow.git
+    git clone git@github.com:Oneflow-Inc/oneflow.git
     ```
 
 - 输入以下命令，克隆 Oneflow API 中文文档仓库并进入 oneflow-api-cn 文件夹：
 
     ```shell
-    git clone https://github.com/Oneflow-Inc/oneflow-api-cn.git
+    git clone git@github.com:Oneflow-Inc/oneflow-api-cn.git
     cd oneflow-api-cn
     ```
 
-如果是首次进行翻译工作，需要继续运行以下命令（只需运行一次，之后不需要运行）：
+继续运行以下命令：
 
 1. 安装可以重置 `docstr` 的 Python 包：
 
@@ -48,12 +62,16 @@
     ```
 
 3. [安装 OneFlow](https://start.oneflow.org/)：
+    ```
+    python3 -m pip install -f https://staging.oneflow.info/branch/master/cu102 oneflow
+    ```
 
+4. 更新 Oneflow：
+   ```
+   pip uninstall oneflow -y && pip install --pre oneflow -f https://staging.oneflow.info/branch/master/cu102
+   ```
 
-        python3 -m pip install -f https://staging.oneflow.info/branch/master/cu102 oneflow
-
-
-4. 在 `master` 分支上创建新的分支，开始翻译工作：
+5. 在 `master` 分支上创建新的分支，开始翻译工作：
 
     ```shell
     git checkout -b 本地分支名（建议英文_日期）
@@ -63,6 +81,18 @@
 
     ```shell
     git checkout -b nn_1209
+    ```
+
+6. 检查环境是否配置成功, 在 `docs` 文件下运行:
+
+    ```shell
+    make test_cn
+    ```
+
+    和
+
+    ```shell
+    make html_cn
     ```
 
 Oneflow Python API 文档翻译顺序按照英文文档网站 [OneFlow API Reference](https://oneflow.readthedocs.io/en/master/index.html) API 接口的顺序，逐个翻译。
@@ -273,6 +303,26 @@ pip uninstall oneflow
 python3 -m pip install --pre -f https://staging.oneflow.info/branch/master/cu102 oneflow
 ```
 
+3. 如果本地运行 make test_cn 报错，则在终端中寻找报错文件的具体位置，这种报错一般是翻译内容中的代码运行不通过，使用 
+   ```
+    ipython 
+    ``` 
+    来进行检查修改。
+
+4. 在云平台连接断开后，每次重新连接时需要重新进行配置环境。在 VS code 中的 config 文件内修改 Hostname，将云平台项目中最新的 ssh 地址粘贴进去，并重新生成 ssh 密钥，修改 github 中的密钥内容， 并重新进行 `首次翻译的准备` 中的1、2、3、4步，才可继续翻译。 
+
+5. 每次工作前先运行
+   ```
+   git fetch
+   ```
+   来将远程主机的最新内容拉到本地，检查后决定是否合并到工作本机分支中更新仓库中的内容。
+   ```
+   git pull
+   ```
+   将远程主机的最新内容拉下来后直接合并，以免提交 pr 时发生冲突。 
+
+6. 如果英文 api 文档增加了部分函数， 则需要在对应目录下的 .rst 文件中添加新的函数。
+
 ## 提交翻译
 
 如果在 `docs` 下运行
@@ -299,6 +349,12 @@ git status
 
 ```shell
 git add [file1] [file2] ...
+```
+
+确认你的身份：
+```
+git config --global user.email "你的 github 电子邮箱"
+git config --global user.name "你的 github 用户名"
 ```
 
 将暂存区内容添加到本地仓库中， \[message] 为要备注的信息:
