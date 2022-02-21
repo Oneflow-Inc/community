@@ -17,6 +17,7 @@
 - 连接公司服务器或云平台，可参考[视频](https://oneflow-public.oss-cn-beijing.aliyuncs.com/translate_api_docs/how_to_deploy_cloud.mp4)。
 
 注意：视频中提到的在 Windows操作系统下， nc.exe 的安装路径为 C:\Users\你的用户名\Documents\MobaXterm\slash\bin\nc.exe ，并非在安装目录下。
+ 
 
 - 打开终端，输入以下命令，克隆 OneFlow 源码仓库：
 
