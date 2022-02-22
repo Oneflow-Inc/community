@@ -13,7 +13,8 @@
 
 ## 首次翻译的准备
 
-- 本地安装 VS code，并安装 Remote - SSH 拓展。
+- 本地安装 VS code，并安装 Remote - SSH 拓展（可参考小糖的[教学视频——Remote SSH](https://www.bilibili.com/video/BV1YT4y1d78B))。
+
 - 连接公司服务器或云平台，可参考[视频](https://oneflow-public.oss-cn-beijing.aliyuncs.com/translate_api_docs/how_to_deploy_cloud.mp4)。
 
 注意：
@@ -26,7 +27,7 @@
    并将 cockbrew 的位置粘贴进 config 文件中。
 
 
-- 生成ssh密钥：
+- 生成ssh密钥(可参考小糖的[教学视频——SSH免密验证](https://www.bilibili.com/video/BV1NL411x7z9)：
   ```
   ssh-keygen -t rsa -C "你的 github 电子邮箱"
   ```
@@ -61,7 +62,7 @@
     cd docs && python3 -m pip install -r requirements.txt
     ```
 
-3. [安装 OneFlow](https://start.oneflow.org/)：
+3. [安装 OneFlow](https://docs.oneflow.org/)：
     ```
     python3 -m pip install -f https://staging.oneflow.info/branch/master/cu102 oneflow
     ```
