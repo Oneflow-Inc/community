@@ -324,6 +324,8 @@ python3 -m pip install --pre -f https://staging.oneflow.info/branch/master/cu102
 
 6. 如果英文 api 文档增加了部分函数， 则需要在对应目录下的 .rst 文件中添加新的函数。
 
+7. 云平台环境的 token 有效期是 1 天， 需要用鼠标定期和服务端交互来保证云平台不掉线——也就是刷新浏览器。 
+
 ## 提交翻译
 
 如果在 `docs` 下运行
