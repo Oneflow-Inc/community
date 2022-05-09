@@ -85,7 +85,11 @@
 
 
     ```shell
-    cd docs && make html SPHINXOPTS="-W --keep-going"
+    cd docs && make html 
+    ```
+
+    ```shell
+    cd docs && make test
     ```
 
 Oneflow Python API 文档翻译顺序按照英文文档网站 [OneFlow API Reference](https://oneflow.readthedocs.io/en/master/index.html) API 接口的顺序，逐个翻译。
@@ -305,13 +309,13 @@ python3 -m pip install --pre -f https://staging.oneflow.info/branch/master/cu102
 如果在 `docs` 下运行
 
 ```shell
-make test_cn
+make test
 ```
 
 和
 
 ```shell
-make html_cn
+make html
 ```
 
 后未出现 warning ，则可以提交翻译进度。
