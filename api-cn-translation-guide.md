@@ -48,31 +48,28 @@
     ```
 
 继续运行以下命令：
-
-1. 安装可以重置 `docstr` 的 Python 包：
-
-    ```shell
-    python3 -m pip install -r dev-requirements.txt
-    python3 setup.py install
-    ```
-
-2. 切换到 `docs` 目录，安装相关依赖：
+1. 安装相关依赖：
 
     ```shell
-    cd docs && python3 -m pip install -r requirements.txt
+    python3 -m pip install pybind11 --user
+    python3 -m pip install -r docs/requirements.txt --user
     ```
+
+
+2. 安装可以重置 `docstr` 的 Python 包：
+
+    ```shell
+    python3 setup.py install --user
+    ```
+
 
 3. [安装 OneFlow](https://docs.oneflow.org/)：
     ```
-    python3 -m pip install -f https://staging.oneflow.info/branch/master/cu102 oneflow
+    pip install --pre oneflow -f https://staging.oneflow.info/branch/master/cu102
     ```
 
-4. 更新 Oneflow：
-   ```
-   pip uninstall oneflow -y && pip install --pre oneflow -f https://staging.oneflow.info/branch/master/cu102
-   ```
 
-5. 在 `master` 分支上创建新的分支，开始翻译工作：
+4. 在 `master` 分支上创建新的分支，开始翻译工作：
 
     ```shell
     git checkout -b 本地分支名（建议英文_日期）
@@ -86,14 +83,9 @@
 
 6. 检查环境是否配置成功, 在 `docs` 文件下运行:
 
-    ```shell
-    make test_cn
-    ```
-
-    和
 
     ```shell
-    make html_cn
+    cd docs && make html SPHINXOPTS="-W --keep-going"
     ```
 
 Oneflow Python API 文档翻译顺序按照英文文档网站 [OneFlow API Reference](https://oneflow.readthedocs.io/en/master/index.html) API 接口的顺序，逐个翻译。
@@ -272,25 +264,7 @@ reset_docstr(
 
 如果翻译过程中在 [docs/source/cn](./docs/source/cn) 文件夹中添加了新的 .py 文件，则需要在 \_init_.py 中添加新增的文件才能查看翻译效果以及测试代码。
 
-## 查看效果
 
-可以编译文档并下载整个 [docs/build-cn/html](./docs/build-cn/html) 文件夹到本地，查看效果（每次运行前需要彻底删除整个 build-cn 文件夹）：
-
-```shell
-cd docs && make html_cn
-```
-
-测试文档内示例中 `.. code-block:: python` 下的代码：
-
-```shell
-cd docs && make test_cn
-```
-
-如果想对具体代码问题进行测试可以运行 Python ，然后逐行运行代码，则会显示具体输出：
-
-```shell
-python3
-```
 
 ### 常见问题
 
